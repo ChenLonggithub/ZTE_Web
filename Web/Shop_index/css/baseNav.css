@@ -1,0 +1,24 @@
+/*初始化样式*/
+body,a,div,ul,li{margin: 0;padding: 0;list-style: none;border: none;}
+
+/*定义body默认样式*/
+body{font-size: 12px;font-family: "宋体";color: #616161;}
+
+/*定义a标签默认样式*/
+a{text-decoration: none;color: #999}
+
+/*鼠标悬停时的样式*/
+a:hover{text-decoration: underline;}
+
+/*登录设为红色*/
+.denglu{color: red;}
+
+/*siteNav部分*/
+#siteNav{height: 35px;background: #f5f5f5;border-bottom: 1px solid #eee;}
+#siteNavCon{width: 1190px;margin: 0 auto;height: 35px;line-height: 35px;}
+
+#siteNavCon .left{float: left;}
+#siteNavCon .left li{float: left;margin-right: 15px;}
+
+#siteNavCon .right{float: right;}
+#siteNavCon .right li{float: right;margin-right: 15px;}

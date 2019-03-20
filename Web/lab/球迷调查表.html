@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>球迷表单</title>
+	</head>
+	<body>
+		<form action="" method="" id="form">
+			<fieldset id="" align="center">
+				<legend>球迷表</legend>
+				<label>
+					用户名:<input type="text" />
+				</label>
+				<br /><br />
+				<label>
+					密码:<input type="password" id="password" value="" placeholder="请输入密码！" pattern="\d{6}" title="必须输入6个数字"/>
+				</label>
+				<br /><br />
+				<label>
+					确认密码:<input type="password" id="password2" placeholder="请确认密码！" value=""/>
+				</label>
+				<br /><br />
+				<label>
+					邮箱:<input type="email" id="email" placeholder="请输入邮箱！" value="" />
+				</label>
+				<br /><br />
+				<label>
+					请输入所选专业：<input type="text" name="major" list="lstMajor" />
+					<datalist id="lstMajor">
+						<option value="软件工程">
+						<option value="网络工程">
+						<option value="信息工程">
+					</datalist>
+				</label>
+				<br /><br />
+				<label>
+				请选择您的性别:
+				男<input type="radio" value="男" name="sex"/>
+				女<input type="radio" value="女" name="sex" checked="checked"/>
+				</label>
+				<br /><br />
+				请选择您的兴趣爱好:
+				登山<input type="checkbox" value="" />
+				游泳<input type="checkbox" value="" />
+				足球<input type="checkbox" value="" checked="checked"/>
+				跳舞<input type="checkbox" value="" checked="checked"/>
+				<br /><br />
+				请预测卡尔塔世界杯冠军:
+				<select name="">
+					<option value="">巴西</option>
+					<option value="">德国</option>
+					<option value="" selected="selected">法国</option>
+					<option value="">阿根廷</option>
+				</select>
+				<br /><br />
+				请上传您的生活照
+				<input type="file"/>
+				<br /><br />
+				<span style="position: relative; top: -35px;">个人介绍:</span>
+				<textarea placeholder="请介绍自己" style="resize: none;" cols="30" rows="5"></textarea>
+				<br /><br />
+				<!--普通按钮-->
+				<input type="button" value="普通" onclick="validity1()"/>
+				<!--<button>普通</button>-->
+				<!--重置按钮-->
+				<input type="reset" value="重置"/>
+				<!--提交按钮-->
+				<input type="submit" name="" id="" value="提交" onclick="check()"/>
+			</fieldset>		
+		</form>
+		<script type="text/javascript">
+			function validity1(){
+				var email = document.getElementById("email");
+				alert(email.checkValidity());
+			}
+			function check(){
+				var pwd1 = document.getElementById("password1");
+				var pwd2 = document.getElementById("password2");
+				if(pwd1.value != pwd2.value){
+					pwd2.setCustomValidity("密码和确认密码不一致！");
+					return false;
+				}
+			}
+		</script>
+	</body>
+</html>

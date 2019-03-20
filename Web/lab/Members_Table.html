@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>会员表格</title>
+</head>
+<body>
+	<h2>表格</h2>
+	<table width="500" height="150" border="1" cellpadding="5" cellspacing="0">
+		<tr>
+			<th >会员级别</th>
+			<th width="100px">成长值</th>
+			<th>会员有效期</th>
+		</tr>
+		<tr>
+			<td>普通会员</td>
+			<td>0-199</td>
+			<td>永久</td>
+		</tr>
+		<tr>
+			<td>银卡会员</td>
+			<td>200-999</td>
+			<td>有效期1年，1年后扣除500成长值，根据剩下的成长值重新计算等级</td>
+		</tr>
+		<tr>
+			<td>金卡会员</td>
+			<td>1000-1999</td>
+			<td>有效期1年，1年后扣除1000成长值，根据剩下的成长值重新计算等级</td>
+		</tr>
+		<tr>
+			<td>钻石会员</td>
+			<td>2000-无限大</td>
+			<td>有效期1年，1年后扣除1500成长值，根据剩下的成长值重新计算等级</td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td>备注：系统会自动计算</td>
+		</tr>
+	</table>
+
+</body>
+</html>

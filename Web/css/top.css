@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 宋体;
+}
+
+#top_left{
+    /*float: left;*/
+    background: rebeccapurple;
+
+}
+
+#top #top_mid{
+    overflow: hidden;
+    float: left;
+}
+
+#top #top_right{
+    overflow: hidden;
+    float: right;
+}
