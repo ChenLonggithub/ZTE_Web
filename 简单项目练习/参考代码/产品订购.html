@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>产品订购</title>
+</head>
+
+<body>
+	<form action="" method="get">
+		<table width="700" border="1">
+		  <tr>
+		    <th colspan="4">产品订购</th>
+		  </tr>
+		  <tr>
+		    <td width="132" align="right">姓 名：</td>
+		    <td width="213"><input type="text" name="username"/></td>
+		    <td width="105">商品名称：</td>
+		    <td width="222"><input type="text" name="product"/></td>
+		  </tr>
+		  <tr>
+		    <td align="right">地 区：</td>
+		    <td>
+		      <select name="region" size="2">
+		      	<option value="gz">广州</option>
+		        <option value="sh">上海</option>
+		        <option value="bj">北京</option>
+		      </select>
+		      </td>
+		    <td>付款方式：</td>
+		    <td ><input type="radio" name="pay" value="web"/>网上 
+		    	<input type="radio" name="pay" value="post" checked="checked" />邮局
+		    	<input type="radio" name="pay" value="bank" />银行
+		    </td>
+		  </tr>
+		  <tr>
+		    <td align="right">关注产品：</td>
+		    <td colspan="3">
+		      <input type="checkbox" name="hz" checked="checked"/>护肤品 
+		      <input type="checkbox" name="hz" />化妆品 
+		      <input type="checkbox" name="clothing" checked="checked" />服 装 
+		      <input type="checkbox" name="dq" />电 器  
+		    </td>	
+
+		  </tr>
+		  <tr>
+		    <td align="right">联系电话：</td>
+		    <td colspan="3"><input type="text" name="tel"/></td>
+		  </tr>
+		  <tr>
+		    <td align="right">备 注：</td>
+		    <td colspan="3">
+		    	<textarea rows="6" cols="60" name="remark"></textarea></td>
+		  </tr>
+		  <tr>
+		    <td align="right"></td>
+		    <td colspan="3"><input type="submit" value="提 交"/> <input type="reset" value="重 置"/></td>
+		  </tr>
+		</table>
+</form>
+</body>
+</html>

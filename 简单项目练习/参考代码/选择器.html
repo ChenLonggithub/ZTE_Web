@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*所有选择器*/
+			*{
+			   font-weight:bold ;
+			}
+			/*标签选择器*/
+			div{
+				color: blueviolet;
+			}
+			/*id选择器*/
+			#div{
+				color: darkorange;
+			}
+			/*类选择器*/
+			.div{
+				color: olivedrab;
+			}
+			/*属性选择器*/
+			span[name='jin']{
+				color: red;
+			}
+			/*子选择器*/
+			div>ul{
+				list-style: none;
+			}
+			/*后代选择器*/
+			div ul{
+				list-style: none;
+			}
+			/*相邻兄弟元素*/
+			/*#li+li{
+				color: yellow;
+			}*/
+			#li~span{
+				color: red;
+			}
+			/*组合选择器*/
+			h1,h2,a{
+				background-color: aquamarine;
+			}
+			span.div{
+				font-size: 50px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>刘备</div>
+		<div id="div" class="div">曹操</div>
+		<div class="div">孙权</div>
+		<div>董卓</div>
+		<div class="div">张角</div>
+		<p>周瑜</p>
+		<span class="div">吕蒙</span>
+		<span>黄盖</span>
+		<span name='jin'>诸葛瑾</span>
+		<span name='danj'>诸葛诞</span>
+		<div>
+			<ul>
+				<li>曹丕</li>
+				<li id="li">曹仁</li>
+				<li>曹植</li>
+				<li>曹睿</li>
+				<span>曹彰</span>
+				<span>曹休</span>
+				<li>
+					<ul>
+						<li>大乔</li>
+						<li>小乔</li>
+						<li>孙尚香</li>
+						<li>黄月英</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<h1>三国秀1</h1>
+		<h2>三国秀2</h2>
+		<a href="#">三国秀3</a>
+	</body>
+</html>
